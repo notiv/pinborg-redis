@@ -1,2 +1,2 @@
 # pinborg-redis
-A distributed pinbord
+A distributed pinborg
