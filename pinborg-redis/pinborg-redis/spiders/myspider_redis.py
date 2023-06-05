@@ -4,7 +4,7 @@ from scrapy_redis.spiders import RedisSpider
 class MySpider(RedisSpider):
     """Spider that reads urls from redis queue (myspider:start_urls)."""
     name = 'myspider_redis'
-    redis_key = 'myspider:start_urls'
+    redis_key = 'pinborg_spider:start_urls'
 
     def __init__(self, *args, **kwargs):
         # Dynamically define the allowed domains list.

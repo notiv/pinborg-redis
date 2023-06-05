@@ -8,17 +8,34 @@ from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose, TakeFirst, Join
 
 
-class ExampleItem(Item):
-    name = Field()
-    description = Field()
-    link = Field()
-    crawled = Field()
-    spider = Field()
+class PinItem(Item):
+    # define the fields for your item here like:
+    id = Field()
     url = Field()
+    url_id = Field()
+    url_slug = Field()
+    url_count = Field()
+    title = Field()
+    created_at = Field()
+    pin_fetch_date = Field()
+    tags = Field() # array of tags
+    author = Field()
 
+class PageItem(Item):
+    page_url = Field()
+    page_url_slug = Field()
+    page_fetch_date = Field()
+    page_code = Field()
+    page_content = Field()
+    page_content_size = Field()
 
-class ExampleLoader(ItemLoader):
-    default_item_class = ExampleItem
-    default_input_processor = MapCompose(lambda s: s.strip())
-    default_output_processor = TakeFirst()
-    description_out = Join()
+class UrlSlugItem(Item):
+    # fields that we get when parsing the
+    # url_slug (e.g. https://pinboard.in/url:f81a7954a8ab701aa47ddaef236d90fea167dfae/)
+    url_slug = Field()
+    url = Field()
+    pin_url = Field()
+    user_list = Field()  # array of users who have saved this pin as well
+    user_list_length = Field() # number of users who have saved this pin as well
+    all_tags = Field()  # array of tags from all users
+    url_slug_fetch_date = Field()
