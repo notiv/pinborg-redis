@@ -5,7 +5,7 @@ import math
 import re
 
 from bs4 import BeautifulSoup
-from ..items import PageItem, PinItem, UrlSlugItem
+from pinborg_redis.items import PageItem, PinItem, UrlSlugItem
 
 from scrapy_redis.spiders import RedisSpider
 
