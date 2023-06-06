@@ -1,0 +1,1 @@
+{"id": 514879417, "url": "http://bugra.github.io/work/notes/2014-05-12/pydata-silicon-valley-2014/", "url_slug": "77d2f48d3f5c1f14e18be07954c47bf6ce4ce167", "url_count": 2, "title": "PyData Silicon Valley 2014", "created_at": "2014-05-16T06:56:11", "pin_fetch_date": "2023-06-06T08:13:19.118868", "tags": ["python", "data-science", "conference"], "author": "notiv"}

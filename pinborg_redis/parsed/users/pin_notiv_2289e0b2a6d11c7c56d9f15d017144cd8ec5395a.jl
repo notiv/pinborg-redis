@@ -1,0 +1,1 @@
+{"id": 794786386, "url": "http://www.insightdataengineering.com/blog/elasticsearch-search-tradeoffs/", "url_slug": "2289e0b2a6d11c7c56d9f15d017144cd8ec5395a", "url_count": 2, "title": "Anatomy of an Elasticsearch Cluster: Part III", "created_at": "2016-08-06T22:23:24", "pin_fetch_date": "2023-06-06T08:11:42.009497", "tags": ["elasticsearch", "tutorial"], "author": "notiv"}

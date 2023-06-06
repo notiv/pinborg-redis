@@ -1,0 +1,1 @@
+{"id": 1323122000, "url": "https://allendowney.github.io/DSIRP/", "url_slug": "06c59aa1306d75fd511ea193a330edd5bb5977af", "url_count": 22, "title": "Data Structures and Information Retrieval in Python", "created_at": "2021-12-21T22:06:55", "pin_fetch_date": "2023-06-06T08:09:54.546304", "tags": ["data-structure", "algorithm"], "author": "notiv"}

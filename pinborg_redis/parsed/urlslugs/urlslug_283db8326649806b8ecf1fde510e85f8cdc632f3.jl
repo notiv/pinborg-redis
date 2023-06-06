@@ -1,0 +1,1 @@
+{"url_slug": "283db8326649806b8ecf1fde510e85f8cdc632f3", "url": "https://pinboard.in/url:283db8326649806b8ecf1fde510e85f8cdc632f3", "pin_url": "https://www.confluent.io/blog/apache-kafka-getting-started/", "user_list": ["notiv", "jeffrosenberg"], "user_list_length": 2, "all_tags": ["data", "kafka", "tips"], "url_slug_fetch_date": "2023-06-06T08:10:34.847402"}

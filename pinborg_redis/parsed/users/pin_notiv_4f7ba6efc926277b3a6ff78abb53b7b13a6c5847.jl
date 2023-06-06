@@ -1,0 +1,1 @@
+{"id": 983493265, "url": "https://www.startupschool.org", "url_slug": "4f7ba6efc926277b3a6ff78abb53b7b13a6c5847", "url_count": null, "title": "Startup School from Y Combinator", "created_at": "2017-12-11T19:58:33", "pin_fetch_date": "2023-06-06T08:09:54.608935", "tags": ["startup", "video", "tips"], "author": "notiv"}

@@ -1,0 +1,1 @@
+{"id": 1065881890, "url": "https://github.com/arun-gupta/k8s-machine-learning/", "url_slug": "1b8fdb5c69223388eaf6b362f5496f096cf99a06", "url_count": 1, "title": "Kubernetes and Machine Learning", "created_at": "2018-09-21T06:35:41", "pin_fetch_date": "2023-06-06T08:09:54.580816", "tags": ["kubernetes", "machine-learning", "github", "tutorial"], "author": "notiv"}

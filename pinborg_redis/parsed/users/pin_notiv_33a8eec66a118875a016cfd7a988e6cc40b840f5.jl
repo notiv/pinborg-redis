@@ -1,0 +1,1 @@
+{"id": 674483656, "url": "http://lowrank.net/nikos/pubs/empirical.pdf", "url_slug": "33a8eec66a118875a016cfd7a988e6cc40b840f5", "url_count": 2, "title": "An Empirical Evaluation of Supervised Learning in High Dimensions", "created_at": "2015-09-16T05:31:36", "pin_fetch_date": "2023-06-06T08:11:42.027488", "tags": ["machine-learning", "comparison"], "author": "notiv"}

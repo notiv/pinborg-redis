@@ -1,0 +1,1 @@
+{"id": 810958561, "url": "https://www.cs.toronto.edu/%7Egraves/preprint.pdf", "url_slug": "88868d4551f90d9e2f50461b70c23c82a2e33939", "url_count": 1, "title": "Supervised Sequence Labelling with Recurrent Neural Networks - Preprint", "created_at": "2016-09-28T18:22:05", "pin_fetch_date": "2023-06-06T08:11:42.008495", "tags": ["book", "RNN", "deep-learning"], "author": "notiv"}

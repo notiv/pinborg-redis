@@ -1,0 +1,1 @@
+{"id": 422174200, "url": "http://googleresearch.blogspot.ch/2013/06/excellent-papers-for-2012.html", "url_slug": "69727b9cabc067946a431494a64d08048477f684", "url_count": 1, "title": "Excellent Papers for 2012", "created_at": "2013-06-14T16:31:49", "pin_fetch_date": "2023-06-06T08:13:19.147287", "tags": ["google", "research", "paper"], "author": "notiv"}

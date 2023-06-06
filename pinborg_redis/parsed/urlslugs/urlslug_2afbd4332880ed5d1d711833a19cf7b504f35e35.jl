@@ -1,0 +1,1 @@
+{"url_slug": "2afbd4332880ed5d1d711833a19cf7b504f35e35", "url": "https://pinboard.in/url:2afbd4332880ed5d1d711833a19cf7b504f35e35", "pin_url": "http://phatblat.com/blog/2014/09/14/git-sparse-checkout/", "user_list": ["eric-ruser", "notiv", "vonc"], "user_list_length": 3, "all_tags": ["checkout", "example", "git", "sparse"], "url_slug_fetch_date": "2023-06-06T08:12:07.760821"}

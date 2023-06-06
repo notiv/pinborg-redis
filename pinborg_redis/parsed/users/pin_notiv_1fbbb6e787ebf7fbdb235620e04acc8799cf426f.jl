@@ -1,0 +1,1 @@
+{"id": 643208195, "url": "http://www.datastax.com/dev/blog/zen-art-spark-maintenance", "url_slug": "1fbbb6e787ebf7fbdb235620e04acc8799cf426f", "url_count": 5, "title": "Zen and the Art of Spark Maintenance : DataStax", "created_at": "2015-06-11T14:43:28", "pin_fetch_date": "2023-06-06T08:13:19.073021", "tags": ["spark"], "author": "notiv"}

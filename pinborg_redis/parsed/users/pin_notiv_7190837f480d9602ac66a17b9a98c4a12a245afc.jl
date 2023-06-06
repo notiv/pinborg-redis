@@ -1,0 +1,1 @@
+{"id": 1155523934, "url": "https://lena-voita.github.io/posts/emnlp19_evolution.html", "url_slug": "7190837f480d9602ac66a17b9a98c4a12a245afc", "url_count": 10, "title": "Evolution of Representations in the Transformer", "created_at": "2019-09-18T19:17:21", "pin_fetch_date": "2023-06-06T08:09:54.562082", "tags": ["deep-learning", "nlp", "BERT"], "author": "notiv"}

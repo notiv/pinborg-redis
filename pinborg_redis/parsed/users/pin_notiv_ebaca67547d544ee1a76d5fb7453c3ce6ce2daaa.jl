@@ -1,0 +1,1 @@
+{"id": 688160068, "url": "http://cs231n.github.io/", "url_slug": "ebaca67547d544ee1a76d5fb7453c3ce6ce2daaa", "url_count": 268, "title": "CS231n Convolutional Neural Networks for Visual Recognition", "created_at": "2015-10-27T20:42:10", "pin_fetch_date": "2023-06-06T08:11:42.026166", "tags": ["neural-networks", "deep-learning", "convolutional"], "author": "notiv"}

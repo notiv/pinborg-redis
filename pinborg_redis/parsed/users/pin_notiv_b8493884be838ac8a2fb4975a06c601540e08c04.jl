@@ -1,0 +1,1 @@
+{"id": 937623985, "url": "http://tech.kinja.com/how-not-to-pull-from-s3-using-apache-spark-1704509219", "url_slug": "b8493884be838ac8a2fb4975a06c601540e08c04", "url_count": 13, "title": "How NOT to pull from S3 using Apache Spark", "created_at": "2017-08-26T08:37:58", "pin_fetch_date": "2023-06-06T08:11:41.974363", "tags": ["s3", "spark", "data", "load"], "author": "notiv"}

@@ -1,0 +1,1 @@
+{"id": 494231701, "url": "https://www.gitorious.org/zsh-dotfiles", "url_slug": "1822fc7a7b52bb4a65996d675b757d4098b78d93", "url_count": 1, "title": "gitorious zsh dotfiles", "created_at": "2014-03-06T20:39:42", "pin_fetch_date": "2023-06-06T08:13:19.127987", "tags": ["zsh", "dotfile"], "author": "notiv"}

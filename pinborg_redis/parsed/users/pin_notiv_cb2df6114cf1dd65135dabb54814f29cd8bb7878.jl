@@ -1,0 +1,1 @@
+{"id": 404582953, "url": "http://www.bytemining.com/wp-content/uploads/2010/07/r_hpc.pdf", "url_slug": "cb2df6114cf1dd65135dabb54814f29cd8bb7878", "url_count": 1, "title": "Taking R to the Limit - Part I", "created_at": "2013-04-11T21:38:15", "pin_fetch_date": "2023-06-06T08:13:19.156392", "tags": ["R", "data", "parallelization"], "author": "notiv"}

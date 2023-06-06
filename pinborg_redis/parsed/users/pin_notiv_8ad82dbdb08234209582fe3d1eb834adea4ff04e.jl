@@ -1,0 +1,1 @@
+{"id": 366072754, "url": "http://people.umass.edu/klement/russell-imp.html", "url_slug": "8ad82dbdb08234209582fe3d1eb834adea4ff04e", "url_count": 15, "title": "Russell's Introduction to Mathematical Philosophy", "created_at": "2012-12-01T12:07:29", "pin_fetch_date": "2023-06-06T08:13:19.168929", "tags": ["mathematics", "book", "latex", "Bertrand-Russell"], "author": "notiv"}

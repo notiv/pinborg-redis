@@ -1,0 +1,1 @@
+{"url_slug": "a9ca917fab4d5cb96e2566fcbc346945657db9bf", "url": "https://pinboard.in/url:a9ca917fab4d5cb96e2566fcbc346945657db9bf", "pin_url": "https://d0.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["aws", "best-practices"], "url_slug_fetch_date": "2023-06-06T08:11:58.356407"}

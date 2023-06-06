@@ -1,0 +1,1 @@
+{"id": 1409084014, "url": "https://tor-lattimore.com/downloads/book/book.pdf", "url_slug": "ba3985fbe94385b8a48d53ade5cc4d73d91d2a28", "url_count": 6, "title": "Bandit Algorithms", "created_at": "2023-03-05T10:53:39", "pin_fetch_date": "2023-06-06T08:09:54.542594", "tags": ["multi-armed", "bandits"], "author": "notiv"}

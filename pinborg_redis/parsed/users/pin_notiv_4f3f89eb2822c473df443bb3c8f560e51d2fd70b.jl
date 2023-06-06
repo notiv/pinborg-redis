@@ -1,0 +1,1 @@
+{"id": 925514279, "url": "http://ruder.io/deep-learning-nlp-best-practices/", "url_slug": "4f3f89eb2822c473df443bb3c8f560e51d2fd70b", "url_count": 106, "title": "Deep Learning for NLP Best Practices", "created_at": "2017-07-26T10:03:41", "pin_fetch_date": "2023-06-06T08:11:41.978389", "tags": ["best-practices", "deep-learning", "nlp"], "author": "notiv"}

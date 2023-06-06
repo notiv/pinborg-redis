@@ -1,0 +1,1 @@
+{"id": 976391917, "url": "https://medium.com/@devfire/deploying-the-elk-stack-on-amazon-ecs-dd97d671df06", "url_slug": "3ab9c6bda6103645812bfcbcf7d6ea9181dcc03c", "url_count": 10, "title": "Deploying the ELK stack on AWS ECS", "created_at": "2017-11-25T20:31:03", "pin_fetch_date": "2023-06-06T08:09:54.611072", "tags": ["elasticsearch", "elk", "aws", "amazon"], "author": "notiv"}

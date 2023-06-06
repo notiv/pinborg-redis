@@ -1,0 +1,1 @@
+{"id": 366532093, "url": "http://spf13.com/post/perfect-vimrc-vim-config-file/", "url_slug": "27900b871da67cb39fda6ac661095702360efb24", "url_count": 11, "title": "The perfect .vimrc vim config file Steve Francia's Epic Blog", "created_at": "2012-12-03T21:43:34", "pin_fetch_date": "2023-06-06T08:13:19.162868", "tags": ["vim", "vimrc"], "author": "notiv"}

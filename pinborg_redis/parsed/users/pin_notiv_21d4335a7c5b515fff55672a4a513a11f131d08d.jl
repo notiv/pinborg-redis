@@ -1,0 +1,1 @@
+{"id": 608870008, "url": "http://www.bitbootcamp.com/resources.html", "url_slug": "21d4335a7c5b515fff55672a4a513a11f131d08d", "url_count": 27, "title": "Bitbootcamp BigData Hadoop Training", "created_at": "2015-02-25T22:19:46", "pin_fetch_date": "2023-06-06T08:13:19.093833", "tags": ["data", "programming", "mathematics", "resources"], "author": "notiv"}

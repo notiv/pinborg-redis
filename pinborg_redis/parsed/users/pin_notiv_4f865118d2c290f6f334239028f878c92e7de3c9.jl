@@ -1,0 +1,1 @@
+{"id": 1093213949, "url": "https://link.medium.com/5PhFmxfrJS", "url_slug": "4f865118d2c290f6f334239028f878c92e7de3c9", "url_count": 1, "title": "Training Neural Nets on Larger Batches", "created_at": "2018-12-17T22:04:21", "pin_fetch_date": "2023-06-06T08:09:54.577941", "tags": ["machine-learning", "gpu", "neural-networks", "deep-learning"], "author": "notiv"}

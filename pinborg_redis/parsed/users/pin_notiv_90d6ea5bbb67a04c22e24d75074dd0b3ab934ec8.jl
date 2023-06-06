@@ -1,0 +1,1 @@
+{"id": 1052379824, "url": "http://hookedondata.org/Guidelines-for-AB-Testing/", "url_slug": "90d6ea5bbb67a04c22e24d75074dd0b3ab934ec8", "url_count": 24, "title": "Guidelines For Ab Testing - Hooked on Data", "created_at": "2018-08-08T06:25:53", "pin_fetch_date": "2023-06-06T08:09:54.589337", "tags": ["A/B-testing", "A/B", "tips"], "author": "notiv"}

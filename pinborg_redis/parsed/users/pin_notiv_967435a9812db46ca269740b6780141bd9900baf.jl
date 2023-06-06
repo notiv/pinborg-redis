@@ -1,0 +1,1 @@
+{"id": 895900874, "url": "https://www.linkedin.com/pulse/predicting-defaulting-credit-cards-natalino-busa", "url_slug": "967435a9812db46ca269740b6780141bd9900baf", "url_count": 3, "title": "Predicting defaulting credit cards", "created_at": "2017-05-16T14:49:56", "pin_fetch_date": "2023-06-06T08:11:41.991487", "tags": ["notebook", "machine-learning", "tsne"], "author": "notiv"}
