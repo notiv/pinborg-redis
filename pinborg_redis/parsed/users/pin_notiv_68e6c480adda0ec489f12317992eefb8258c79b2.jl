@@ -1,1 +1,0 @@
-{"id": 1300390501, "url": "https://github.com/donnemartin/system-design-primer", "url_slug": "68e6c480adda0ec489f12317992eefb8258c79b2", "url_count": 1304, "title": "System Design Primer", "created_at": "2021-08-30T21:28:13", "pin_fetch_date": "2023-06-06T08:09:54.554167", "tags": ["system-design", "tutorial", "resources"], "author": "notiv"}

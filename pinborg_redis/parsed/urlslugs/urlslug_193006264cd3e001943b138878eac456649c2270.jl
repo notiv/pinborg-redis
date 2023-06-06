@@ -1,1 +1,0 @@
-{"url_slug": "193006264cd3e001943b138878eac456649c2270", "url": "https://pinboard.in/url:193006264cd3e001943b138878eac456649c2270", "pin_url": "https://arxiv.org/abs/2108.05542", "user_list": ["arnicas", "notiv"], "user_list_length": 2, "all_tags": ["deep-learning", "neural-networks", "nlp", "reference", "transformer"], "url_slug_fetch_date": "2023-06-06T08:10:15.667273"}

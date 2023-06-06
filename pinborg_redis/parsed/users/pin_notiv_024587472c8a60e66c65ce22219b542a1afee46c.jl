@@ -1,1 +1,0 @@
-{"id": 979524127, "url": "http://ruder.io/deep-learning-optimization-2017/index.html", "url_slug": "024587472c8a60e66c65ce22219b542a1afee46c", "url_count": 28, "title": "Optimization for Deep Learning Highlights 2017", "created_at": "2017-12-03T22:20:34", "pin_fetch_date": "2023-06-06T08:09:54.610500", "tags": ["deep-learning", "tips", "paper", "resources"], "author": "notiv"}

@@ -1,1 +1,0 @@
-{"url_slug": "967435a9812db46ca269740b6780141bd9900baf", "url": "https://pinboard.in/url:967435a9812db46ca269740b6780141bd9900baf", "pin_url": "https://www.linkedin.com/pulse/predicting-defaulting-credit-cards-natalino-busa", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["machine-learning", "notebook", "tsne"], "url_slug_fetch_date": "2023-06-06T08:12:51.727428"}

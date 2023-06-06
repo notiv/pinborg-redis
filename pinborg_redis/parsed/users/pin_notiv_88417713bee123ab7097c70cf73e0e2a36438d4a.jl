@@ -1,1 +1,0 @@
-{"id": 428088031, "url": "http://avesbiodiv.mncn.csic.es/estadistica/bt1.pdf", "url_slug": "88417713bee123ab7097c70cf73e0e2a36438d4a", "url_count": 2, "title": "A working guide to boosted regression trees", "created_at": "2013-07-02T21:40:17", "pin_fetch_date": "2023-06-06T08:13:19.144188", "tags": ["machine-learning", "research", "paper", "regression"], "author": "notiv"}

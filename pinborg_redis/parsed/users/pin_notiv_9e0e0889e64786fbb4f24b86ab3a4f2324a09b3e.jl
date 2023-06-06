@@ -1,1 +1,0 @@
-{"id": 1236322909, "url": "https://www.leshenko.net/p/ugit/#", "url_slug": "9e0e0889e64786fbb4f24b86ab3a4f2324a09b3e", "url_count": 86, "title": "ugit: DIY Git in Python", "created_at": "2020-10-04T17:24:20", "pin_fetch_date": "2023-06-06T08:09:54.560143", "tags": ["git", "python"], "author": "notiv"}

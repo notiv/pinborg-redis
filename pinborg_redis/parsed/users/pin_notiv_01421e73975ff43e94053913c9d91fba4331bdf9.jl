@@ -1,1 +1,0 @@
-{"id": 494246995, "url": "http://stevelosh.com/blog/2010/09/coming-home-to-vim/", "url_slug": "01421e73975ff43e94053913c9d91fba4331bdf9", "url_count": 842, "title": "Coming Home to vim", "created_at": "2014-03-06T22:06:20", "pin_fetch_date": "2023-06-06T08:13:19.127553", "tags": ["vim", "tutorial"], "author": "notiv"}

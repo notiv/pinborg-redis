@@ -1,1 +1,0 @@
-{"id": 1002178630, "url": "https://github.com/spro/practical-pytorch", "url_slug": "0e0a1779315fba69f104dc87a149f26f54423887", "url_count": 22, "title": "Practical Pytorch", "created_at": "2018-02-11T12:26:59", "pin_fetch_date": "2023-06-06T08:09:54.595673", "tags": ["pytorch", "deep-learning", "github", "tutorial"], "author": "notiv"}

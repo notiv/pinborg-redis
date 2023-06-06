@@ -1,1 +1,0 @@
-{"id": 983543518, "url": "http://web.cecs.pdx.edu/~tymerski/ece101/Expert_mind_scientificamerican0806-64.pdf", "url_slug": "6c1967897787a879023bf9fa6870c62ed53d99b6", "url_count": 36, "title": "The Expert Mind", "created_at": "2017-12-11T20:26:52", "pin_fetch_date": "2023-06-06T08:09:54.607236", "tags": ["learning", "theory", "scientific-american"], "author": "notiv"}

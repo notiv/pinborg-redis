@@ -1,1 +1,0 @@
-{"id": 776611978, "url": "http://topepo.github.io/caret/modelList.html", "url_slug": "882a06565bc1318af5744e815c7985ab7032355d", "url_count": null, "title": "Caret Models", "created_at": "2016-06-14T19:24:53", "pin_fetch_date": "2023-06-06T08:11:42.012465", "tags": ["R", "machine-learning", "caret", "model"], "author": "notiv"}

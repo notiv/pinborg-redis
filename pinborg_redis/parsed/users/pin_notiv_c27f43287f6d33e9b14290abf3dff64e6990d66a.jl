@@ -1,1 +1,0 @@
-{"id": 515889409, "url": "http://www.datarobot.com/blog/a-primer-on-deep-learning/", "url_slug": "c27f43287f6d33e9b14290abf3dff64e6990d66a", "url_count": null, "title": "A Primer on Deep Learning | DataRobot", "created_at": "2014-05-20T06:20:45", "pin_fetch_date": "2023-06-06T08:13:19.118147", "tags": ["machine-learning", "neural-networks", "deep-learning"], "author": "notiv"}

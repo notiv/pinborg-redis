@@ -1,1 +1,0 @@
-{"url_slug": "2289e0b2a6d11c7c56d9f15d017144cd8ec5395a", "url": "https://pinboard.in/url:2289e0b2a6d11c7c56d9f15d017144cd8ec5395a", "pin_url": "http://www.insightdataengineering.com/blog/elasticsearch-search-tradeoffs/", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["elasticsearch", "tutorial"], "url_slug_fetch_date": "2023-06-06T08:12:06.207348"}

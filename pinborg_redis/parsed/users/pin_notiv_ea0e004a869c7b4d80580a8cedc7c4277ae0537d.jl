@@ -1,1 +1,0 @@
-{"id": 784709536, "url": "http://insightdataengineering.com/blog/elasticsearch-core/", "url_slug": "ea0e004a869c7b4d80580a8cedc7c4277ae0537d", "url_count": 8, "title": "Anatomy of an Elasticsearch Cluster: Part II", "created_at": "2016-07-08T07:57:00", "pin_fetch_date": "2023-06-06T08:11:42.011567", "tags": ["elasticsearch", "tutorial"], "author": "notiv"}

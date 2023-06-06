@@ -1,1 +1,0 @@
-{"id": 592876249, "url": "http://harry.me/blog/2014/12/27/neat-algorithms-paxos/", "url_slug": "03e53162864b6351d803ce0a5c10ae648ade914c", "url_count": 81, "title": "Neat Algorithms - Paxos", "created_at": "2015-01-07T21:22:41", "pin_fetch_date": "2023-06-06T08:13:19.098089", "tags": ["algorithm", "distributed-systems", "paxos"], "author": "notiv"}

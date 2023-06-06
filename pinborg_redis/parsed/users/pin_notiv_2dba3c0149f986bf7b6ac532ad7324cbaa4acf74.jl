@@ -1,1 +1,0 @@
-{"id": 743230564, "url": "https://coreos.com/kubernetes/docs/latest/kubernetes-on-vagrant.html", "url_slug": "2dba3c0149f986bf7b6ac532ad7324cbaa4acf74", "url_count": 7, "title": "Kubernetes Installation with Vagrant & CoreOS", "created_at": "2016-03-22T21:17:13", "pin_fetch_date": "2023-06-06T08:11:42.023844", "tags": ["kubernetes", "vagrant", "coreos"], "author": "notiv"}

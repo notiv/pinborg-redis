@@ -1,1 +1,0 @@
-{"id": 1080645934, "url": "https://eng.uber.com/uber-big-data-platform/", "url_slug": "52a6ad3cfe661d44b73928ca65dee7e8e9987dce", "url_count": 61, "title": "Uber's Big Data Platform", "created_at": "2018-10-25T18:43:02", "pin_fetch_date": "2023-06-06T08:09:54.579249", "tags": ["bigdata", "architecture"], "author": "notiv"}

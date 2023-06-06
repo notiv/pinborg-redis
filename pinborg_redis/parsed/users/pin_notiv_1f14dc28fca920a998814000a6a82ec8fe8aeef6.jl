@@ -1,1 +1,0 @@
-{"id": 1148747882, "url": "http://ruder.io/optimizing-gradient-descent/", "url_slug": "1f14dc28fca920a998814000a6a82ec8fe8aeef6", "url_count": null, "title": "An overview of gradient descent optimization algorithms", "created_at": "2019-08-16T17:35:15", "pin_fetch_date": "2023-06-06T08:09:54.572738", "tags": ["gradient-descent", "deep-learning"], "author": "notiv"}

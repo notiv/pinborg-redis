@@ -1,1 +1,0 @@
-{"id": 401263114, "url": "http://word.bitly.com/post/41284219720/forget-table", "url_slug": "aaf2d6eef9654619e57cd030397ff62390d767c2", "url_count": null, "title": "Forget Table", "created_at": "2013-04-01T20:59:49", "pin_fetch_date": "2023-06-06T08:13:19.157609", "tags": ["bitly", "data", "statistics", "tool"], "author": "notiv"}

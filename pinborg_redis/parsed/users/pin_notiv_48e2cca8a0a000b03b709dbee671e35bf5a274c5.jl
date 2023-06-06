@@ -1,1 +1,0 @@
-{"id": 842736998, "url": "https://arxiv.org/pdf/1611.03530v1.pdf", "url_slug": "48e2cca8a0a000b03b709dbee671e35bf5a274c5", "url_count": 4, "title": "Understanding Deep Learning Requires Rethinking Generalization", "created_at": "2017-01-10T18:25:28", "pin_fetch_date": "2023-06-06T08:11:41.998032", "tags": ["deep-learning", "paper"], "author": "notiv"}

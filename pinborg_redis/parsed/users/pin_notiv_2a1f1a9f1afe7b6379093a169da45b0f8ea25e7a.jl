@@ -1,1 +1,0 @@
-{"id": 1371875083, "url": "https://github.com/karanpratapsingh/system-design", "url_slug": "2a1f1a9f1afe7b6379093a169da45b0f8ea25e7a", "url_count": 62, "title": "System Design Course", "created_at": "2022-08-18T15:17:46", "pin_fetch_date": "2023-06-06T08:09:54.544854", "tags": ["system-design", "course"], "author": "notiv"}

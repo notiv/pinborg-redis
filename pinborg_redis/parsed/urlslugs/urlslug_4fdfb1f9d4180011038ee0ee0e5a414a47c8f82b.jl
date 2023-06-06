@@ -1,1 +1,0 @@
-{"url_slug": "4fdfb1f9d4180011038ee0ee0e5a414a47c8f82b", "url": "https://pinboard.in/url:4fdfb1f9d4180011038ee0ee0e5a414a47c8f82b", "pin_url": "https://nmarkou.blogspot.ch/2017/02/the-black-magic-of-deep-learning-tips.html", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["deep-learning", "neural-networks", "tips"], "url_slug_fetch_date": "2023-06-06T08:12:21.577734"}

@@ -1,1 +1,0 @@
-{"id": 992205244, "url": "https://www.sics.se/~amir/id2221/", "url_slug": "7f277c8169e21795f21a748eb0d347d7c465e78e", "url_count": 1, "title": "Data Intensive Computing", "created_at": "2018-01-10T19:55:09", "pin_fetch_date": "2023-06-06T08:09:54.597840", "tags": ["data", "course", "bigdata"], "author": "notiv"}

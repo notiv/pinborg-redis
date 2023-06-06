@@ -1,1 +1,0 @@
-{"id": 1278693623, "url": "https://www.cognitivefactory.fr/fastaidocs/", "url_slug": "68db621de4e8bd438436e63685f0d498591aa569", "url_count": 8, "title": "Fast.ai docs", "created_at": "2021-05-08T20:01:22", "pin_fetch_date": "2023-06-06T08:09:54.555821", "tags": ["pytorch", "tutorial", "cheatsheet", "deep-learning"], "author": "notiv"}

@@ -1,1 +1,0 @@
-{"id": 505290664, "url": "http://seat.massey.ac.nz/personal/s.r.marsland/MLbook.html", "url_slug": "f1e62b4b7cf701d11cc3f7e707397f546466af63", "url_count": 5, "title": "Stephen Marsland - ML Book", "created_at": "2014-04-13T18:58:24", "pin_fetch_date": "2023-06-06T08:13:19.124331", "tags": ["book", "machine-learning", "python"], "author": "notiv"}

@@ -1,1 +1,0 @@
-{"id": 661092283, "url": "http://savvastjortjoglou.com/nba-shot-sharts.html", "url_slug": "b903498dd6e4d7fff8dfcb46bfc22cf2827f989a", "url_count": 129, "title": "How to Create NBA Shot Charts in Python", "created_at": "2015-08-06T22:11:40", "pin_fetch_date": "2023-06-06T08:11:42.037801", "tags": ["python", "visualization", "nba"], "author": "notiv"}

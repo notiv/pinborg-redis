@@ -1,1 +1,0 @@
-{"id": 1296495080, "url": "https://sebastianraschka.com/blog/2021/dl-course.html", "url_slug": "f2a3a728dba7d9a006135d9604a6a76d58bb0bde", "url_count": 79, "title": "Introduction to Deep Learning", "created_at": "2021-08-10T13:15:07", "pin_fetch_date": "2023-06-06T08:09:54.555246", "tags": ["video", "tutorial", "deep-learning"], "author": "notiv"}

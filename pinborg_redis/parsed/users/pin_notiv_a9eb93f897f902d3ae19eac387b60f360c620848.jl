@@ -1,1 +1,0 @@
-{"id": 940476517, "url": "https://medium.com/@bansalnagesh/backing-up-mongodb-on-aws-ec2-to-s3-b045b5727fd6", "url_slug": "a9eb93f897f902d3ae19eac387b60f360c620848", "url_count": 1, "title": "Backing up MongoDB on AWS Ec2 to S3", "created_at": "2017-09-04T20:16:55", "pin_fetch_date": "2023-06-06T08:11:41.972241", "tags": ["aws", "mongodb", "s3", "backup"], "author": "notiv"}

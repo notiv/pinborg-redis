@@ -1,1 +1,0 @@
-{"id": 996338170, "url": "https://activewizards.com/blog/top-15-scala-libraries-for-data-science/", "url_slug": "0c0d6db81b6da0a5a571c36169ffbdd3236b9bae", "url_count": 6, "title": "Top 15 Scala Libraries for Data Science in 2018", "created_at": "2018-01-21T11:58:48", "pin_fetch_date": "2023-06-06T08:09:54.596909", "tags": ["scala", "data-science", "library"], "author": "notiv"}

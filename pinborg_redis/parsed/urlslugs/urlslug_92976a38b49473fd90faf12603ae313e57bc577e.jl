@@ -1,1 +1,0 @@
-{"url_slug": "92976a38b49473fd90faf12603ae313e57bc577e", "url": "https://pinboard.in/url:92976a38b49473fd90faf12603ae313e57bc577e", "pin_url": "https://www.mapr.com/ebooks/spark/chapter08-making-recommendations.html", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["recommendation", "recommender", "scala", "spark"], "url_slug_fetch_date": "2023-06-06T08:12:49.295753"}

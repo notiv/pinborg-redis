@@ -1,1 +1,0 @@
-{"id": 361959560, "url": "http://www.drbunsen.org/block-periodization.html", "url_slug": "6f53ab36e5df4a1344be6f8ff8da42270d05580e", "url_count": 29, "title": "Block Periodization", "created_at": "2012-11-12T23:34:02", "pin_fetch_date": "2023-06-06T08:13:19.175942", "tags": ["learning", "method", "productivity"], "author": "notiv"}

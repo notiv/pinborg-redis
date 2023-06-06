@@ -1,1 +1,0 @@
-{"url_slug": "b8b695714f58e4dfc199b867059d18d18c63c980", "url": "https://pinboard.in/url:b8b695714f58e4dfc199b867059d18d18c63c980", "pin_url": "https://www.confluent.io/blog/kafka-connect-deep-dive-converters-serialization-explained", "user_list": ["Ciudilo", "notiv"], "user_list_length": 2, "all_tags": ["kafka", "streaming"], "url_slug_fetch_date": "2023-06-06T08:11:19.375398"}

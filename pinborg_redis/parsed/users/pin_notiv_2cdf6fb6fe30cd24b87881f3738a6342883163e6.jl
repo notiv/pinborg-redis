@@ -1,1 +1,0 @@
-{"id": 724403770, "url": "https://www.oreilly.com/ideas/the-world-beyond-batch-streaming-102", "url_slug": "2cdf6fb6fe30cd24b87881f3738a6342883163e6", "url_count": 101, "title": "The world beyond batch: Streaming 102", "created_at": "2016-01-30T20:11:48", "pin_fetch_date": "2023-06-06T08:11:42.024833", "tags": ["streaming"], "author": "notiv"}

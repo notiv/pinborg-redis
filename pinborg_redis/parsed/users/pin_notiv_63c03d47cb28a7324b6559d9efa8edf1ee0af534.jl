@@ -1,1 +1,0 @@
-{"id": 1270998709, "url": "https://egraphs-good.github.io/", "url_slug": "63c03d47cb28a7324b6559d9efa8edf1ee0af534", "url_count": 49, "title": "e-graphs good", "created_at": "2021-03-28T17:19:47", "pin_fetch_date": "2023-06-06T08:09:54.558996", "tags": ["graph", "algorithm"], "author": "notiv"}

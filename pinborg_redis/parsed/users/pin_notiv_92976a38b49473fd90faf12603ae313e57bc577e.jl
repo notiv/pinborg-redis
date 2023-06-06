@@ -1,1 +1,0 @@
-{"id": 673452622, "url": "https://www.mapr.com/ebooks/spark/chapter08-making-recommendations.html", "url_slug": "92976a38b49473fd90faf12603ae313e57bc577e", "url_count": 1, "title": "Making Recommendations with Spark", "created_at": "2015-09-12T18:50:02", "pin_fetch_date": "2023-06-06T08:11:42.027912", "tags": ["spark", "scala", "recommendation", "recommender"], "author": "notiv"}

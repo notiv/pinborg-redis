@@ -1,1 +1,0 @@
-{"url_slug": "7f277c8169e21795f21a748eb0d347d7c465e78e", "url": "https://pinboard.in/url:7f277c8169e21795f21a748eb0d347d7c465e78e", "pin_url": "https://www.sics.se/~amir/id2221/", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["bigdata", "course", "data"], "url_slug_fetch_date": "2023-06-06T08:11:04.504370"}

@@ -1,1 +1,0 @@
-{"url_slug": "1b8fdb5c69223388eaf6b362f5496f096cf99a06", "url": "https://pinboard.in/url:1b8fdb5c69223388eaf6b362f5496f096cf99a06", "pin_url": "https://github.com/arun-gupta/k8s-machine-learning/", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["github", "kubernetes", "machine-learning", "tutorial"], "url_slug_fetch_date": "2023-06-06T08:10:28.802681"}

@@ -1,1 +1,0 @@
-{"id": 884846591, "url": "http://sebastianruder.com/transfer-learning/", "url_slug": "f81a7954a8ab701aa47ddaef236d90fea167dfae", "url_count": 18, "title": "Transfer Learning", "created_at": "2017-04-14T20:21:48", "pin_fetch_date": "2023-06-06T08:11:41.991921", "tags": ["machine-learning", "deep-learning", "transfer-learning"], "author": "notiv"}

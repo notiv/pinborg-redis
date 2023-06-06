@@ -1,1 +1,0 @@
-{"url_slug": "4f7ba6efc926277b3a6ff78abb53b7b13a6c5847", "url": "https://pinboard.in/url:4f7ba6efc926277b3a6ff78abb53b7b13a6c5847", "pin_url": "https://www.startupschool.org", "user_list": ["notiv"], "user_list_length": 1, "all_tags": ["startup", "tips", "video"], "url_slug_fetch_date": "2023-06-06T08:10:47.061512"}

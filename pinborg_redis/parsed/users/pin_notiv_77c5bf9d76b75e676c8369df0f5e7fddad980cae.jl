@@ -1,1 +1,0 @@
-{"id": 481403695, "url": "http://duartes.org/gustavo/blog/post/anatomy-of-a-program-in-memory", "url_slug": "77c5bf9d76b75e676c8369df0f5e7fddad980cae", "url_count": 138, "title": "Anatomy of a Program in Memory : Gustavo Duarte", "created_at": "2014-01-20T17:47:03", "pin_fetch_date": "2023-06-06T08:13:19.130016", "tags": ["programming", "memory-management"], "author": "notiv"}

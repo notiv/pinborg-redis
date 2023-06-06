@@ -1,1 +1,0 @@
-{"id": 782400766, "url": "http://insightdataengineering.com/blog/elasticsearch-crud/", "url_slug": "4e44b0adc4f1aaa227110b471e6d01cf00d5b8d1", "url_count": 61, "title": "Anatomy of an Elasticsearch Cluster: Part I", "created_at": "2016-07-01T07:34:41", "pin_fetch_date": "2023-06-06T08:11:42.012044", "tags": ["elasticsearch", "tutorial", "cluster"], "author": "notiv"}
