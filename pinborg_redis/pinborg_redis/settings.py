@@ -63,6 +63,7 @@ EXTENSIONS = {
 
 ITEM_PIPELINES = {
     'scrapy_redis.pipelines.RedisPipeline': 400,
+    'pinborg_redis.pipelines.PinborgPostgresPipeline': 500,
     'pinborg_redis.pipelines.PinborgJsonPipeline': 600,
 }
 
