@@ -5,6 +5,7 @@ import math
 import re
 import sys
 
+
 from bs4 import BeautifulSoup
 from pinborg_redis import utilities as utils
 from pinborg_redis.items import PageItem, PinItem, UrlSlugItem
@@ -14,6 +15,7 @@ from scrapy_redis.spiders import RedisSpider
 from scrapy import Request
 from scrapy.spiders import Rule
 from scrapy.linkextractors import LinkExtractor
+from urllib.parse import urlparse, urldefrag
 
 DIFF_MAX_DATE_TO_1970_IN_SECS = math.floor((
     datetime.datetime.max - 
@@ -65,7 +67,7 @@ class PinSpider(RedisSpider):
         pin = PinItem()
 
         pin['url_id'] = bookmark['id']
-        pin['url'] = bookmark['url']
+        pin['url'] = urldefrag(bookmark['url'])[0]
         pin['url_slug'] = bookmark['url_slug']
         pin['url_count'] = bookmark['url_count']
         pin['title'] = bookmark['title']
@@ -106,7 +108,7 @@ class PinSpider(RedisSpider):
             user_list = sum(user_list, []) # Change from list of lists to list
 
             url_slug['url_slug'] = re.findall('url:(.*)', response.url)[0]
-            url_slug['url'] = response.url
+            url_slug['url'] = urldefrag(response.url)[0]
             url_slug['pin_url'] = pin_url
             url_slug['user_list'] = user_list
             url_slug['user_list_length'] = len(user_list)
@@ -127,7 +129,7 @@ class PinSpider(RedisSpider):
     def parse_external_page(self, response):
         external_page = PageItem()
 
-        external_page['page_url'] = response.url
+        external_page['page_url'] = urldefrag(response.url)[0]
         external_page['page_url_slug'] = response.meta['url_slug']
         external_page['page_fetch_date'] = datetime.datetime.utcnow().isoformat()
         external_page['page_code'] = response.status
