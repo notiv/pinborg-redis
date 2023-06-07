@@ -3,8 +3,10 @@ import datetime
 import json
 import math
 import re
+import sys
 
 from bs4 import BeautifulSoup
+from pinborg_redis import utilities as utils
 from pinborg_redis.items import PageItem, PinItem, UrlSlugItem
 
 from scrapy_redis.spiders import RedisSpider
@@ -121,3 +123,24 @@ class PinSpider(RedisSpider):
                     yield Request(
                         f'https://pinboard.in/u:{user}/before:{self.before}', 
                         callback=self.parse)
+    
+    def parse_external_page(self, response):
+        external_page = PageItem()
+
+        external_page['page_url'] = response.url
+        external_page['page_url_slug'] = response.meta['url_slug']
+        external_page['page_fetch_date'] = datetime.datetime.utcnow().isoformat()
+        external_page['page_code'] = response.status
+        external_page['page_content'] = ''
+        external_page['page_content_size'] = 0
+
+        if response.url[-4:] == '.pdf':
+            external_page['page_content'] = utils.parse_pdf(response)
+            external_page['page_content_size'] = sys.getsizeof(external_page['page_content'])
+        elif response.body:
+            external_page['page_content'] = utils.parse_html(response)
+            external_page['page_content_size'] = sys.getsizeof(external_page['page_content'])
+        else:
+            self.logger.info(f'[PINBORG] No response body.')
+
+        yield external_page

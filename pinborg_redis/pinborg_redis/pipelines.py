@@ -14,7 +14,7 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 DATETIME_FORMAT = '%Y-%m-%dT%H:%M:%S'
 DATETIME2_FORMAT = '%Y-%m-%dT%H:%M:%S.%f'
 
-DEFAULT_USERS_FOLDER = './parsed/users'
+DEFAULT_PINS_FOLDER = './parsed/pins'
 DEFAULT_URLSLUGS_FOLDER = './parsed/urlslugs'
 DEFAULT_PAGES_FOLDER = './parsed/pages'
 
@@ -23,7 +23,7 @@ def get_item_type(item):
 
 class PinborgJsonPipeline:
     def open_spider(self, spider):
-        pathlib.Path(DEFAULT_USERS_FOLDER).mkdir(parents=True, exist_ok=True)
+        pathlib.Path(DEFAULT_PINS_FOLDER).mkdir(parents=True, exist_ok=True)
         pathlib.Path(DEFAULT_URLSLUGS_FOLDER).mkdir(parents=True, exist_ok=True)
         pathlib.Path(DEFAULT_PAGES_FOLDER).mkdir(parents=True, exist_ok=True)
 
@@ -42,7 +42,7 @@ class PinborgJsonPipeline:
         if item_type == 'pin':
             author = item['author']
             url_slug = item['url_slug']
-            file = open(f'{DEFAULT_USERS_FOLDER}/{item_type}_{author}_{url_slug}.jl', 'w')
+            file = open(f'{DEFAULT_PINS_FOLDER}/{item_type}_{author}_{url_slug}.jl', 'w')
             line = json.dumps(dict(item)) + '\n'
             file.write(line)
             file.close()
@@ -90,6 +90,9 @@ class PinborgPostgresPipeline:
         
         if not self._check_if_table_exists('URLSLUG'):
             self._create_urlslug_table()
+
+        if not self._check_if_table_exists('PAGE'):
+            self._create_page_table()
 
     def _check_if_database_exists(self, database):
         # NOTE: The connection and the cursor are temporary (try to access
@@ -207,10 +210,31 @@ class PinborgPostgresPipeline:
                 user_list_length integer,
                 all_tags text[],
                 url_slug_fetch_date timestamp
-            )
+            );
+
+            CREATE INDEX IF NOT EXISTS urlslug_url_slug ON URLSLUG (url_slug);
             """
         )
         
+        # Commit, close the cursor and the connection
+        self.connection.commit()
+
+    def _create_page_table(self):
+
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS PAGE(
+                page_url_slug text PRIMARY KEY,
+                page_url text,
+                page_fetch_date timestamp,
+                page_code text,
+                page_content text,
+                page_content_size integer
+            );
+
+            CREATE INDEX IF NOT EXISTS page_url_slug ON PAGE (page_url_slug);
+            """
+        )
+       
         # Commit, close the cursor and the connection
         self.connection.commit()
 
@@ -232,10 +256,9 @@ class PinborgPostgresPipeline:
         if item_type == 'pin':
             self._insert_into_pin_table(item)
         elif item_type == 'urlslug':
-            url_slug = item['url_slug']
-            pass
+            self._insert_into_urlslug_table(item)
         elif item_type == 'page':
-            pass
+            self._insert_into_page_table(item)
         
         return item
     
@@ -259,4 +282,39 @@ class PinborgPostgresPipeline:
             (url_id, url, url_slug, url_count, title, created_at, pin_fetch_date, tags, author)
             )
 
+        self.connection.commit()
+
+    def _insert_into_urlslug_table(self, item):
+        url_slug = item['url_slug']
+        url = item['url']
+        pin_url = item['pin_url']
+        user_list = item['user_list']
+        user_list_length = item['user_list_length']
+        all_tags = item['all_tags']
+        url_slug_fetch_date = datetime.strptime(item['url_slug_fetch_date'], DATETIME2_FORMAT)
+
+        self.cursor.execute(f"""
+            INSERT INTO URLSLUG(
+                url_slug, url, pin_url, user_list, user_list_length, all_tags, url_slug_fetch_date)
+            VALUES(%s, %s, %s, ARRAY[%s], %s, ARRAY[%s], %s)
+            ON CONFLICT (url_slug) DO NOTHING;""",
+            (url_slug, url, pin_url, user_list, user_list_length, all_tags, url_slug_fetch_date))
+        
+        self.connection.commit()
+
+    def _insert_into_page_table(self, item):
+        page_url_slug = item['page_url_slug']
+        page_url = item['page_url']
+        page_fetch_date = datetime.strptime(item['page_fetch_date'], DATETIME2_FORMAT)
+        page_code = item['page_code']
+        page_content = item['page_content']
+        page_content_size = item['page_content_size']
+
+        self.cursor.execute(f"""
+            INSERT INTO PAGE(
+                page_url_slug, page_url, page_fetch_date, page_code, page_content, page_content_size)
+            VALUES(%s, %s, %s, %s, %s, %s)
+            ON CONFLICT (page_url_slug) DO NOTHING;""",
+            (page_url_slug, page_url, page_fetch_date, page_code, page_content, page_content_size))
+        
         self.connection.commit()

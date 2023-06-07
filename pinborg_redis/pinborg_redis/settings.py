@@ -12,7 +12,7 @@ SPIDER_MODULES = ['pinborg_redis.spiders']
 NEWSPIDER_MODULE = 'pinbord_redis.spiders'
 
 # Parse external webpages or not
-PARSE_EXTERNAL_LINKS = False  
+PARSE_EXTERNAL_LINKS = True 
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
