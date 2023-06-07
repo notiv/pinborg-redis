@@ -2,7 +2,7 @@
 import io
 
 from bs4 import BeautifulSoup
-from PyPDF2 import PdfFileReader
+from pypdf import PdfReader
 
 def parse_pdf(response):
     """ Parses a pdf url (response) and returns the content as text. Images and 
@@ -23,10 +23,10 @@ def parse_pdf(response):
          as suffix.''') 
 
     mem_file = io.BytesIO(response.body)
-    reader = PdfFileReader(mem_file)
+    reader = PdfReader(mem_file)
     content = ''
     for page in reader.pages:
-        text = page.extractText()
+        text = page.extract_text()
         content = ' '.join([content, text])
 
     return content
