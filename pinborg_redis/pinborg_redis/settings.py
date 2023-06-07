@@ -93,3 +93,6 @@ LOG_LEVEL = 'DEBUG'
 # Introduce an artifical delay to make use of parallelism. to speed up the
 # crawl.
 DOWNLOAD_DELAY = 1
+
+STATS_KEY = 'pinborg_redis:stats'
+STATS_CLASS = 'scrapy_redis.stats.RedisStatsCollector'

@@ -38,6 +38,7 @@ class PinSpider(RedisSpider):
         self.start_user = user
         self.before = before
         self.re_url_extract = re.compile('url:(.*)')
+        self.users_parsed = set() # TODO: Replace with bloom filter
 
 
     def parse(self, response):
@@ -61,7 +62,7 @@ class PinSpider(RedisSpider):
     def parse_bookmark(self, bookmark):
         pin = PinItem()
 
-        pin['id'] = bookmark['id']
+        pin['url_id'] = bookmark['id']
         pin['url'] = bookmark['url']
         pin['url_slug'] = bookmark['url_slug']
         pin['url_count'] = bookmark['url_count']

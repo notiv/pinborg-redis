@@ -10,9 +10,8 @@ from scrapy.loader.processors import MapCompose, TakeFirst, Join
 
 class PinItem(Item):
     # define the fields for your item here like:
-    id = Field()
-    url = Field()
     url_id = Field()
+    url = Field()
     url_slug = Field()
     url_count = Field()
     title = Field()

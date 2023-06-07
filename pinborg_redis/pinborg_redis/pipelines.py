@@ -7,8 +7,12 @@ import json
 import pathlib
 import psycopg2
 
+from datetime import datetime
 from itemadapter import ItemAdapter
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+
+DATETIME_FORMAT = '%Y-%m-%dT%H:%M:%S'
+DATETIME2_FORMAT = '%Y-%m-%dT%H:%M:%S.%f'
 
 DEFAULT_USERS_FOLDER = './parsed/users'
 DEFAULT_URLSLUGS_FOLDER = './parsed/urlslugs'
@@ -70,16 +74,29 @@ class PinborgPostgresPipeline:
         if not self._check_if_database_exists(self.database):
             self._create_database(self.database)
 
-        if not self._check_if_table_exists('PIN', self.database):
-            self._create_pin_table(self.database)
+        # Create a persistent connection to the database
+        self.connection = psycopg2.connect(
+            host = self.hostname,
+            user = self.db_username,
+            password = self.db_password,
+            dbname = self.database
+        )
+
+        # Create a persistent cursor to perform database operations
+        self.cursor = self.connection.cursor()
+
+        if not self._check_if_table_exists('PIN'):
+            self._create_pin_table()
         
-        if not self._check_if_table_exists('URLSLUG', self.database):
-            self._create_urlslug_table(self.database)
+        if not self._check_if_table_exists('URLSLUG'):
+            self._create_urlslug_table()
 
     def _check_if_database_exists(self, database):
-
+        # NOTE: The connection and the cursor are temporary (try to access
+        # the default_admin_database). Outside this function we connect to
+        # the pinborg database with a "persistent" connection. 
         # Connect to the server
-        conn = psycopg2.connect(
+        temp_conn = psycopg2.connect(
             host = self.hostname,
             user = self.db_username,
             password = self.db_password,
@@ -87,13 +104,13 @@ class PinborgPostgresPipeline:
         )
 
         # Open a cursor to perform database operations
-        cur = conn.cursor()
+        temp_cur = temp_conn.cursor()
 
         # Query the list of databases
-        cur.execute('SELECT datname FROM pg_database WHERE datistemplate = false;')
+        temp_cur.execute('SELECT datname FROM pg_database WHERE datistemplate = false;')
 
         # Fetch all the rows
-        rows = cur.fetchall()
+        rows = temp_cur.fetchall()
 
         # Check if the database exists
         database_exists = False
@@ -104,27 +121,31 @@ class PinborgPostgresPipeline:
             print(f'The {database} database does not exist.')
 
         # Close the cursor and the connection
-        cur.close()
-        conn.close()
+        temp_cur.close()
+        temp_conn.close()
 
         return database_exists
 
     def _create_database(self, database):
+        # NOTE: The connection and the cursor are temporary (try to access
+        # the default_admin_database). Outside this function we connect to
+        # the pinborg database with a "persistent" connection. 
+        #
         # Connect to the server
-        conn = psycopg2.connect(
+        temp_conn = psycopg2.connect(
             host=self.hostname,
             user=self.db_username,
             password=self.db_password,
             dbname=self.default_admin_database
         )
 
-        conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+        temp_conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
 
         # Open a cursor to perform database operations
-        cur = conn.cursor()
+        temp_cur = temp_conn.cursor()
 
         # Create the database
-        cur.execute(f'''CREATE DATABASE {database}
+        temp_cur.execute(f'''CREATE DATABASE {database}
                     WITH 
                     OWNER = {self.db_username}
                     ENCODING = 'UTF8'
@@ -132,26 +153,16 @@ class PinborgPostgresPipeline:
                     IS_TEMPLATE = False;''')
 
         # Close the cursor and the connection
-        cur.close()
-        conn.close()
+        temp_cur.close()
+        temp_conn.close()
 
-    def _check_if_table_exists(self, table_name, database):
-        # Connect to the server
-        conn = psycopg2.connect(
-            host=self.hostname,
-            user=self.db_username,
-            password=self.db_password,
-            dbname=database
-        )
-
-        # Open a cursor to perform database operations
-        cur = conn.cursor()
+    def _check_if_table_exists(self, table_name):
 
         # Query the list of tables
-        cur.execute('SELECT table_name FROM information_schema.tables;')
+        self.cursor.execute('SELECT table_name FROM information_schema.tables;')
 
         # Fetch all the rows
-        rows = cur.fetchall()
+        rows = self.cursor.fetchall()
 
         # Check if the table exists
         table_exists = False
@@ -161,27 +172,14 @@ class PinborgPostgresPipeline:
         else:
             print(f'The {table_name} table does not exist.')
 
-        # Close the cursor and the connection
-        cur.close()
-        conn.close()
-
         return table_exists
     
-    def _create_pin_table(self, database):
-        conn = psycopg2.connect(
-            host=self.hostname,
-            user=self.db_username,
-            password=self.db_password,
-            dbname=database
-        )
+    def _create_pin_table(self):
 
-        cur = conn.cursor()
-
-        cur.execute("""
+        self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS PIN(
-                id serial PRIMARY KEY, 
+                url_id integer PRIMARY KEY, 
                 url text,
-                url_id text,
                 url_slug text,
                 url_count integer,
                 title text,
@@ -189,26 +187,18 @@ class PinborgPostgresPipeline:
                 pin_fetch_date timestamp,
                 tags text[],
                 author character(255)
-            )
+            );
+
+            CREATE INDEX IF NOT EXISTS pin_url_id ON PIN (url_id);
             """
         )
         
         # Commit, close the cursor and the connection
-        conn.commit()
-        cur.close()
-        conn.close()
+        self.connection.commit()
 
-    def _create_urlslug_table(self, database):
-        conn = psycopg2.connect(
-            host=self.hostname,
-            user=self.db_username,
-            password=self.db_password,
-            dbname=database
-        )
+    def _create_urlslug_table(self):
 
-        cur = conn.cursor()
-
-        cur.execute("""
+        self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS URLSLUG(
                 url_slug text PRIMARY KEY, 
                 url text,
@@ -222,9 +212,7 @@ class PinborgPostgresPipeline:
         )
         
         # Commit, close the cursor and the connection
-        conn.commit()
-        cur.close()
-        conn.close()
+        self.connection.commit()
 
     def close_spider(self, spider):
         requests_to_be_parsed = len(spider.crawler.engine.slot.scheduler)
@@ -234,12 +222,15 @@ class PinborgPostgresPipeline:
 
         spider.logger.info('[PINBORG_POSTGRES] Closing spider')
 
+        # Close the "persistent" connection and the cursor
+        self.connection.close()
+        self.cursor.close()
+
     def process_item(self, item, spider):
         item_type = get_item_type(item)
 
         if item_type == 'pin':
-            author = item['author']
-            url_slug = item['url_slug']
+            self._insert_into_pin_table(item)
         elif item_type == 'urlslug':
             url_slug = item['url_slug']
             pass
@@ -248,3 +239,24 @@ class PinborgPostgresPipeline:
         
         return item
     
+    def _insert_into_pin_table(self, item):
+        url_id = item['url_id']
+        url = item['url']
+        url_slug = item['url_slug'] 
+        url_count = item['url_count']
+        title = item['title']
+        created_at = datetime.strptime(item['created_at'], DATETIME_FORMAT)
+        pin_fetch_date = datetime.strptime(item['pin_fetch_date'], DATETIME2_FORMAT)
+        tags = item['tags']
+        author = item['author']
+
+        self.cursor.execute(f"""
+            INSERT INTO PIN(
+                url_id, url, url_slug, url_count, title, created_at, pin_fetch_date, tags, author
+            )
+            VALUES(%s, %s, %s, %s, %s, %s, %s, ARRAY[%s], %s)
+            ON CONFLICT (url_id) DO NOTHING;""",
+            (url_id, url, url_slug, url_count, title, created_at, pin_fetch_date, tags, author)
+            )
+
+        self.connection.commit()
